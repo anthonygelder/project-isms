@@ -1,25 +1,32 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: xfiles;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(245, 226, 226);
 }
 
 html {
-    border: ridge 20px;
     height: 100%;
     width: 100%;
-    background-image: url("img/joe.gif");
+    background-image: url("img/space-joe.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
     text-align: center;
+    border: ridge 10px;
 }
 
 #content {
-    background-color: rgba(19, 44, 83, 0.8);
-    border: ridge 10px;
+    background-color: rgba(19, 43, 83, 0.37);
     width: 80%;
     margin: 20px auto;
     text-align: center;
+    border: ridge 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -35,3 +42,13 @@ img {
     margin: 20px 0;
 }
 
+h2 {
+    color: rgb(0, 183, 255);
+}
+
+
+
+@font-face {
+    font-family: xfiles;
+    src: url(./font/x-files.ttf);
+}
