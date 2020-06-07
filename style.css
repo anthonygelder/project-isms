@@ -1,9 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: xfiles;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: rgb(245, 226, 226);
+
 }
 
 html {
@@ -12,11 +10,12 @@ html {
     background-image: url("img/space-joe.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center; 
 }
 
 body {
     text-align: center;
-    border: ridge 10px;
+    /* border: ridge 10px; */
 }
 
 #content {
@@ -33,9 +32,12 @@ h1 {
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: rgb(7, 5, 5);
     color: yellow;
-    font-size: 100px;
+    font-size: 8rem;
     text-shadow: 10px 10px 10px rgb(16, 197, 16);
     margin: 20px 0;
+    font-family: xfiles;
+    /* -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(245, 226, 226); */
 }
 
 img {
@@ -46,7 +48,11 @@ h2 {
     color: rgb(0, 183, 255);
 }
 
-
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
 
 @font-face {
     font-family: xfiles;
